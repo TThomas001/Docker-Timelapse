@@ -1,0 +1,9 @@
+version: "3.9" #specifify docker version
+services:
+  timelap:
+    image: timelap:0.0.6
+    build: .
+    volumes:
+      - /home/t_t/home_server/motioneye:/motioneye
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro

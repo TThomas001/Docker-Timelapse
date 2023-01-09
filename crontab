@@ -1,0 +1,3 @@
+#run python script every day at 00:00
+0 1 * * * /usr/local/bin/python /Timelaps/main.py -i /motioneye/Camera3/ -f 120 > /proc/1/fd/1 2>/proc/1/fd/2
+#end of line
